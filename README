@@ -30,11 +30,16 @@ Users can create a personal support signal that explains:
 
 - [x] Project structure
 - [x] Basic HTML page
-- [ ] Styling
+- [x] Pink and green visual design
+- [x] Responsive layout
 - [ ] Interactive signal creation
 - [ ] AI signal generator
 - [ ] Support card
 - [ ] Sharing
+
+### Design
+
+MySignal uses a soft pink and green visual identity to create a calm, friendly, and welcoming wellness experience.
 
 ## Tech Stack
 
