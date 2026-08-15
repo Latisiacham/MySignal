@@ -32,10 +32,19 @@ Users can create a personal support signal that explains:
 - [x] Basic HTML page
 - [x] Pink and green visual design
 - [x] Responsive layout
-- [ ] Interactive signal creation
+- [x] Interactive signal creation
+- [ ] Show signal summary
 - [ ] AI signal generator
 - [ ] Support card
 - [ ] Sharing
+
+## Current Experience
+
+Users can now select answers about:
+
+- What happens when they are having a difficult day
+- What helps them
+- What does not help them
 
 ### Design
 

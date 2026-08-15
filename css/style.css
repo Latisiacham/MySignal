@@ -230,6 +230,13 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
+.options button.selected {
+    border-color: var(--green);
+    background: var(--green-light);
+    color: var(--green);
+    font-weight: bold;
+}
+
 /* About */
 
 .about {
