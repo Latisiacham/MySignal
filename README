@@ -33,10 +33,18 @@ Users can create a personal support signal that explains:
 - [x] Pink and green visual design
 - [x] Responsive layout
 - [x] Interactive signal creation
-- [ ] Show signal summary
+- [x] Interactive response questions
+- [x] Show signal summary
 - [ ] AI signal generator
 - [ ] Support card
 - [ ] Sharing
+
+## How MySignal Works
+
+1. The user answers three simple questions.
+2. MySignal collects the user's answers.
+3. MySignal turns the answers into a personal support signal.
+4. The signal explains what the person may need and how others can support them.
 
 ## Current Experience
 
@@ -45,6 +53,8 @@ Users can now select answers about:
 - What happens when they are having a difficult day
 - What helps them
 - What does not help them
+
+After answering all three questions, MySignal generates a personal signal summary.
 
 ### Design
 

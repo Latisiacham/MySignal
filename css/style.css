@@ -317,3 +317,41 @@ footer {
     }
 
 }
+
+.signal {
+    margin-top: 40px;
+    padding: 40px;
+
+    border-radius: 30px;
+
+    background: var(--green-light);
+
+    border: 1px solid var(--border);
+    }
+
+    .signal h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .signal-item {
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(91, 155, 104, 0.2);
+    }
+
+    .signal-item:last-child {
+        border-bottom: none;
+    }
+
+    .signal-item h3 {
+        margin-bottom: 5px;
+    }
+
+    .signal-item p {
+        color: var(--gray);
+    }
+
+    .hidden {
+        display: none;
+    }
+
