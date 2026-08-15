@@ -355,3 +355,44 @@ footer {
         display: none;
     }
 
+    .words {
+    margin: 50px 0;
+    padding: 40px;
+
+    border-radius: 30px;
+
+    background: var(--pink-light);
+    }
+
+    .words h2 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    .words > p:not(.small-title) {
+        color: var(--gray);
+        margin-bottom: 25px;
+    }
+
+    .words textarea {
+        width: 100%;
+        min-height: 150px;
+
+        padding: 18px;
+
+        border: 1px solid var(--border);
+        border-radius: 15px;
+
+        font-family: inherit;
+        font-size: 1rem;
+
+        resize: vertical;
+
+        margin-bottom: 20px;
+    }
+
+    .words textarea:focus {
+        outline: 2px solid var(--pink);
+        border-color: transparent;
+    }
+

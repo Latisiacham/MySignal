@@ -35,6 +35,7 @@ Users can create a personal support signal that explains:
 - [x] Interactive signal creation
 - [x] Interactive response questions
 - [x] Show signal summary
+- [x] Allow users to describe their needs in their own words
 - [ ] AI signal generator
 - [ ] Support card
 - [ ] Sharing
@@ -55,6 +56,14 @@ Users can now select answers about:
 - What does not help them
 
 After answering all three questions, MySignal generates a personal signal summary.
+
+## Personal Input
+
+Users who cannot find an option that describes them can write their
+own experience in a text box.
+
+MySignal validates the input and allows the user's own words to become
+part of their support journey.
 
 ### Design
 

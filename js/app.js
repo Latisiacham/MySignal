@@ -61,3 +61,16 @@ function getAnswer(options) {
 
     return "";
 }
+
+const words = document.querySelector("#words");
+const saveWords = document.querySelector("#save-words");
+
+saveWords.addEventListener("click", function() {
+
+    if (words.value.trim() === "") {
+        alert("Tell us a little about what you're experiencing first.");
+        return;
+    }
+
+    alert("Your words have been saved.");
+});
