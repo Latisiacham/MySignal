@@ -1,0 +1,39 @@
+# MySignal 💗🌱
+
+> A simple way to tell people how to support you.
+
+## About
+
+MySignal helps people communicate what they need when they are
+struggling, overwhelmed, stressed, or having a difficult day.
+
+Users can create a personal support signal that explains:
+
+- What they may do when they are struggling
+- What helps them
+- What does not help
+- What kind of support they need
+
+## Project Status
+
+ Currently in development.
+
+## Tech Stack
+
+- HTML
+- CSS
+- JavaScript
+
+## Project Structure
+
+```text
+mysignal/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── app.js
+├── assets/
+│   └── images/
+├── README.md
+└── .gitignore
