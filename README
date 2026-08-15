@@ -16,7 +16,25 @@ Users can create a personal support signal that explains:
 
 ## Project Status
 
- Currently in development.
+## Current Features
+
+- Basic landing page
+- MySignal introduction
+- Create My Signal section
+- Initial support questions
+- About section
+
+ ### Currently in development
+
+ ### Completed
+
+- [x] Project structure
+- [x] Basic HTML page
+- [ ] Styling
+- [ ] Interactive signal creation
+- [ ] AI signal generator
+- [ ] Support card
+- [ ] Sharing
 
 ## Tech Stack
 
