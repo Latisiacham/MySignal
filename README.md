@@ -40,6 +40,7 @@ Users can create a personal support signal that explains:
 - [x] Share signal
 - [x] Share fallback to clipboard
 - [x] Reset and create another signal
+- [x] Mobile responsive design
 
 ## How MySignal Works
 
