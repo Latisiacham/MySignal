@@ -80,7 +80,7 @@ const aiHelp = document.querySelector("#ai-help");
 const aiBad = document.querySelector("#ai-bad");
 
 
-makeAiSignal.addEventListener("click", function() {
+makeAiSignal.addEventListener("click", async function() {
 
     const text = words.value.trim();
 
@@ -91,19 +91,48 @@ makeAiSignal.addEventListener("click", function() {
 
     }
 
-    aiDay.textContent =
-        "I may become quiet or find it difficult to communicate.";
+    try {
 
-    aiHelp.textContent =
-        "Give me some space and check in with me later.";
+        const response = await fetch(
+            "http://localhost:3000/generate-signal",
+            {
+                method: "POST",
 
-    aiBad.textContent =
-        "Please avoid pressuring me to explain everything immediately.";
+                headers: {
+                    "Content-Type": "application/json"
+                },
 
-    aiResult.classList.remove("hidden");
+                body: JSON.stringify({
+                    words: text
+                })
+            }
+        );
 
-    aiResult.scrollIntoView({
-        behavior: "smooth"
-    });
+        const data = await response.json();
+
+        if (!response.ok) {
+
+            alert(data.error);
+            return;
+
+        }
+
+        aiDay.textContent = data.day;
+        aiHelp.textContent = data.help;
+        aiBad.textContent = data.bad;
+
+        aiResult.classList.remove("hidden");
+
+        aiResult.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    } catch (error) {
+
+        console.error(error);
+
+        alert("Something went wrong. Please try again.");
+
+    }
 
 });
