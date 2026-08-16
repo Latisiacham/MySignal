@@ -44,15 +44,15 @@ Users can create a personal support signal that explains:
 - [x] AI signal generator endpoint
 - [x] Support card
 - [x] Copy signal to clipboard
-- [ ] Support card
-- [ ] Sharing
+- [x] Share fallback to clipboard
 
 ## How MySignal Works
 
-1. The user answers three simple questions.
-2. MySignal collects the user's answers.
-3. MySignal turns the answers into a personal support signal.
-4. The signal explains what the person may need and how others can support them.
+1. The user answers guided questions or describes their experience.
+2. MySignal collects the user's information.
+3. MySignal creates a personal support signal.
+4. The signal is presented as a simple support card.
+5. The user can copy or share their signal with people they trust.
 
 ## Current Experience
 
