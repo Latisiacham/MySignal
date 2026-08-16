@@ -167,3 +167,52 @@ copySignal.addEventListener("click", async function() {
     }
 
 });
+
+const shareSignal = document.querySelector("#share-signal");
+const shareMessage = document.querySelector("#share-message");
+
+shareSignal.addEventListener("click", async function() {
+
+    const signalText =
+        "MY SIGNAL\n\n" +
+        "When I'm having a difficult day:\n" +
+        dayAnswer.textContent.trim() + "\n\n" +
+        "What helps me:\n" +
+        helpAnswer.textContent.trim() + "\n\n" +
+        "What doesn't help:\n" +
+        badAnswer.textContent.trim();
+
+    if (navigator.share) {
+
+        try {
+
+            await navigator.share({
+                title: "MySignal",
+                text: signalText
+            });
+
+        } catch (error) {
+
+            console.log("Share cancelled.");
+
+        }
+
+    } else {
+
+        try {
+
+            await navigator.clipboard.writeText(signalText);
+
+            shareMessage.textContent =
+                "Sharing isn't supported here, so your signal was copied instead.";
+
+        } catch (error) {
+
+            shareMessage.textContent =
+                "Unable to share your signal.";
+
+        }
+
+    }
+
+});
