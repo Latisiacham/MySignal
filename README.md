@@ -42,6 +42,8 @@ Users can create a personal support signal that explains:
 - [x] Signal generation API
 - [x] Connect frontend to backend
 - [x] AI signal generator endpoint
+- [x] Support card
+- [x] Copy signal to clipboard
 - [ ] Support card
 - [ ] Sharing
 
