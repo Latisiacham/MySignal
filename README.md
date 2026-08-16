@@ -41,6 +41,8 @@ Users can create a personal support signal that explains:
 - [x] Share fallback to clipboard
 - [x] Reset and create another signal
 - [x] Mobile responsive design
+- [x] OpenAI API integration
+- [x] AI request error handling
 
 ## How MySignal Works
 
@@ -82,12 +84,28 @@ The signal is presented in three simple sections:
 - What helps me
 - Please avoid
 
-The current version uses a backend-generated response. AI-powered
-personalization will be introduced in the next development stage.
+## AI Integration
 
-The backend is prepared to use AI to transform free-form user input
-into a personalized support signal while avoiding diagnosis or
-unsupported assumptions.
+MySignal includes an OpenAI-powered signal generation endpoint that
+is designed to transform free-form user input into a clearer and more
+personalized support signal.
+
+The AI integration works through a backend API so that the OpenAI API
+key is not exposed in the frontend.
+
+The AI is instructed to:
+
+- Understand the user's own words
+- Create a clearer support signal
+- Avoid diagnosing the user
+- Avoid making unsupported assumptions
+- Focus on practical communication and support
+
+If the AI service is unavailable, MySignal handles the failure
+gracefully so that the core guided-question experience remains usable.
+
+AI personalization requires an OpenAI API account with available
+credits.
 
 ### Design
 
@@ -98,6 +116,9 @@ MySignal uses a soft pink and green visual identity to create a calm, friendly, 
 - HTML
 - CSS
 - JavaScript
+- Node.js
+- Express
+- OpenAI API
 
 ## Project Structure
 
