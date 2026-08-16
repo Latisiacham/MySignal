@@ -20,7 +20,29 @@ app.get("/", function(req, res) {
 
 });
 
-app.post("/generate-signal", function(req, res) {
+// app.post("/generate-signal", function(req, res) {
+
+//     const words = req.body.words;
+
+//     if (!words || words.trim() === "") {
+
+//         return res.status(400).json({
+//             error: "Please provide your words."
+//         });
+
+//     }
+
+//     const signal = {
+//         day: "I may become quiet or find it difficult to communicate.",
+//         help: "Give me some space and check in with me later.",
+//         bad: "Please avoid pressuring me to explain everything immediately."
+//     };
+
+//     res.json(signal);
+
+// });
+
+app.post("/generate-signal", async function(req, res) {
 
     const words = req.body.words;
 
@@ -32,13 +54,54 @@ app.post("/generate-signal", function(req, res) {
 
     }
 
-    const signal = {
-        day: "I may become quiet or find it difficult to communicate.",
-        help: "Give me some space and check in with me later.",
-        bad: "Please avoid pressuring me to explain everything immediately."
-    };
+    try {
 
-    res.json(signal);
+        const response = await client.responses.create({
+
+            model: "gpt-5.6",
+
+             text: {
+                format: {
+                    type: "json_object"
+                }
+            },
+
+            input: `
+You are helping a person communicate how others can support them.
+
+Read the person's words below and turn them into a short,
+kind and non-judgmental support signal.
+
+Return ONLY valid JSON in this exact format:
+
+{
+    "day": "What might happen when I am having a difficult day",
+    "help": "What helps me",
+    "bad": "What people should avoid"
+}
+
+Do not diagnose the person.
+Do not mention mental health conditions.
+Do not invent information that is not supported by their words.
+
+Person's words:
+${words}
+`
+        });
+
+        const signal = JSON.parse(response.output_text);
+
+        res.json(signal);
+
+    } catch (error) {
+
+        console.error("AI error:", error);
+
+        res.status(500).json({
+            error: "AI generation is currently unavailable."
+        });
+
+    }
 
 });
 
