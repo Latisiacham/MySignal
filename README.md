@@ -24,27 +24,22 @@ Users can create a personal support signal that explains:
 - Initial support questions
 - About section
 
- ### Currently in development
 
  ### Completed
 
-- [x] Project structure
-- [x] Basic HTML page
-- [x] Pink and green visual design
-- [x] Responsive layout
 - [x] Interactive signal creation
 - [x] Interactive response questions
 - [x] Show signal summary
-- [x] Allow users to describe their needs in their own words
 - [x] Personal text input
 - [x] Personal signal generator interface
 - [x] Backend server
 - [x] Signal generation API
 - [x] Connect frontend to backend
-- [x] AI signal generator endpoint
 - [x] Support card
 - [x] Copy signal to clipboard
+- [x] Share signal
 - [x] Share fallback to clipboard
+- [x] Reset and create another signal
 
 ## How MySignal Works
 
