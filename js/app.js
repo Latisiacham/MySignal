@@ -216,3 +216,33 @@ shareSignal.addEventListener("click", async function() {
     }
 
 });
+
+const resetSignal = document.querySelector("#reset-signal");
+
+resetSignal.addEventListener("click", function() {
+
+    dayOptions.forEach(function(button) {
+        button.classList.remove("selected");
+    });
+
+    helpOptions.forEach(function(button) {
+        button.classList.remove("selected");
+    });
+
+    badOptions.forEach(function(button) {
+        button.classList.remove("selected");
+    });
+
+    words.value = "";
+
+    signal.classList.add("hidden");
+    aiResult.classList.add("hidden");
+
+    copyMessage.textContent = "";
+    shareMessage.textContent = "";
+
+    document.querySelector("#create").scrollIntoView({
+        behavior: "smooth"
+    });
+
+});
