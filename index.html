@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
@@ -12,23 +18,40 @@
     <title>MySignal</title>
 
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 
 <body>
 
+    <!-- Header -->
+
     <header>
-        <a href="#" class="logo">MySignal</a>
+
+        <a href="#" class="logo">
+            MySignal
+        </a>
 
         <nav>
-            <a href="#create">Create My Signal</a>
-            <a href="#about">About</a>
+
+            <a href="#create">
+                Create My Signal
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
         </nav>
+
     </header>
 
 
     <main>
 
-        <!-- Hero section -->
+
+        <!-- Hero -->
+
         <section class="hero">
 
             <div class="hero-text">
@@ -54,9 +77,12 @@
 
             </div>
 
+
             <div class="hero-card">
 
-                <p>MY SIGNAL</p>
+                <p>
+                    MY SIGNAL
+                </p>
 
                 <h2>
                     When I go quiet,
@@ -73,8 +99,11 @@
         </section>
 
 
-        <!-- Create signal section -->
+
+        <!-- Create Signal -->
+
         <section id="create" class="create">
+
 
             <div class="section-title">
 
@@ -95,6 +124,9 @@
             </div>
 
 
+
+            <!-- Question 1 -->
+
             <div class="question">
 
                 <h3>
@@ -103,19 +135,19 @@
 
                 <div class="options" id="day-options">
 
-                    <button>
+                    <button type="button">
                         I become quiet
                     </button>
 
-                    <button>
+                    <button type="button">
                         I stop replying
                     </button>
 
-                    <button>
+                    <button type="button">
                         I get overwhelmed
                     </button>
 
-                    <button>
+                    <button type="button">
                         I need some space
                     </button>
 
@@ -123,6 +155,9 @@
 
             </div>
 
+
+
+            <!-- Question 2 -->
 
             <div class="question">
 
@@ -132,19 +167,19 @@
 
                 <div class="options" id="help-options">
 
-                    <button>
+                    <button type="button">
                         Give me some time
                     </button>
 
-                    <button>
+                    <button type="button">
                         Check in with me later
                     </button>
 
-                    <button>
+                    <button type="button">
                         Listen to me
                     </button>
 
-                    <button>
+                    <button type="button">
                         Help me with one small thing
                     </button>
 
@@ -152,6 +187,9 @@
 
             </div>
 
+
+
+            <!-- Question 3 -->
 
             <div class="question">
 
@@ -161,19 +199,19 @@
 
                 <div class="options" id="bad-options">
 
-                    <button>
+                    <button type="button">
                         Too many questions
                     </button>
 
-                    <button>
+                    <button type="button">
                         Being pressured to talk
                     </button>
 
-                    <button>
+                    <button type="button">
                         Being told to calm down
                     </button>
 
-                    <button>
+                    <button type="button">
                         Being ignored
                     </button>
 
@@ -181,10 +219,14 @@
 
             </div>
 
+
+
+            <!-- Personal Words -->
+
             <div class="words">
 
                 <p class="small-title">
-                CAN'T FIND THE WORDS?
+                    CAN'T FIND THE WORDS?
                 </p>
 
                 <h2>
@@ -196,61 +238,149 @@
                     Just write what feels true.
                 </p>
 
+
                 <textarea
                     id="words"
                     placeholder="For example: When I'm overwhelmed, I usually go quiet..."
                 ></textarea>
 
-                <button class="button" id="save-words">
-                    Save My Words
+
+                <button
+                    class="button"
+                    id="make-ai-signal"
+                    type="button"
+                >
+                    Turn My Words Into a Signal
                 </button>
 
             </div>
-            
 
-            <button class="button" id="make-signal">
+
+
+            <!-- AI Signal Result -->
+
+            <div
+                class="ai-result hidden"
+                id="ai-result"
+            >
+
+                <p class="small-title">
+                    YOUR SIGNAL
+                </p>
+
+                <h2>
+                    Here's a clearer way to explain what you need.
+                </h2>
+
+
+                <div class="ai-item">
+
+                    <h3>
+                        When I'm having a difficult day
+                    </h3>
+
+                    <p id="ai-day"></p>
+
+                </div>
+
+
+                <div class="ai-item">
+
+                    <h3>
+                        What helps me
+                    </h3>
+
+                    <p id="ai-help"></p>
+
+                </div>
+
+
+                <div class="ai-item">
+
+                    <h3>
+                        Please avoid
+                    </h3>
+
+                    <p id="ai-bad"></p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Create Signal Button -->
+
+            <button
+                class="button"
+                id="make-signal"
+                type="button"
+            >
                 Create My Signal
             </button>
 
-            <div class="signal hidden" id="signal">
 
-                <p class="small-title">MY SIGNAL</p>
+
+            <!-- Question-Based Signal -->
+
+            <div
+                class="signal hidden"
+                id="signal"
+            >
+
+                <p class="small-title">
+                    MY SIGNAL
+                </p>
 
                 <h2>
                     Here's how people can support me.
                 </h2>
 
-            <div class="signal-item">
 
-                <h3>When I'm having a difficult day</h3>
+                <div class="signal-item">
 
-                <p id="day-answer"></p>
+                    <h3>
+                        When I'm having a difficult day
+                    </h3>
+
+                    <p id="day-answer"></p>
+
+                </div>
+
+
+                <div class="signal-item">
+
+                    <h3>
+                        What helps me
+                    </h3>
+
+                    <p id="help-answer"></p>
+
+                </div>
+
+
+                <div class="signal-item">
+
+                    <h3>
+                        What doesn't help
+                    </h3>
+
+                    <p id="bad-answer"></p>
+
+                </div>
 
             </div>
-
-            <div class="signal-item">
-
-                <h3>What helps me</h3>
-
-                <p id="help-answer"></p>
-
-            </div>
-
-            <div class="signal-item">
-
-                <h3>What doesn't help</h3>
-
-                <p id="bad-answer"></p>
-
-            </div>
-
-        </div>
 
         </section>
 
 
-        <!-- About section -->
-        <section id="about" class="about">
+
+        <!-- About -->
+
+        <section
+            id="about"
+            class="about"
+        >
 
             <p class="small-title">
                 WHY MYSIGNAL?
@@ -272,15 +402,24 @@
     </main>
 
 
+
+    <!-- Footer -->
+
     <footer>
 
         <p>
-            MySignal · Helping people understand how to support each other.
+            MySignal · Helping people understand
+            how to support each other.
         </p>
 
     </footer>
 
+
+
+    <!-- JavaScript -->
+
     <script src="js/app.js"></script>
 
 </body>
+
 </html>

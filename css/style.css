@@ -396,3 +396,36 @@ footer {
         border-color: transparent;
     }
 
+    .ai-result {
+    margin-top: 30px;
+    padding: 35px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(70, 80, 70, 0.06);
+    }
+
+    .ai-result h2 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    .ai-item {
+        padding: 20px 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .ai-item:last-child {
+        border-bottom: none;
+    }
+
+    .ai-item h3 {
+        margin-bottom: 6px;
+    }
+
+    .ai-item p {
+        color: var(--gray);
+    }
