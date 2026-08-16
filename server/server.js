@@ -132,10 +132,9 @@ app.post("/test-ai", async function(req, res) {
 });
 
 
-const port = 3000;
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, function() {
 
-app.listen(port, function() {
-
-    console.log(`MySignal server running on port ${port}`);
+    console.log(`MySignal server running on port ${PORT}`);
 
 });
