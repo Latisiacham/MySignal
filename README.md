@@ -41,7 +41,7 @@ Users can create a personal support signal that explains:
 - [x] Backend server
 - [x] Signal generation API
 - [x] Connect frontend to backend
-- [ ] AI signal generator
+- [x] AI signal generator endpoint
 - [ ] Support card
 - [ ] Sharing
 
@@ -86,6 +86,10 @@ The signal is presented in three simple sections:
 
 The current version uses a backend-generated response. AI-powered
 personalization will be introduced in the next development stage.
+
+The backend is prepared to use AI to transform free-form user input
+into a personalized support signal while avoiding diagnosis or
+unsupported assumptions.
 
 ### Design
 
