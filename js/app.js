@@ -94,7 +94,7 @@ makeAiSignal.addEventListener("click", async function() {
     try {
 
         const response = await fetch(
-            "http://localhost:3000/generate-signal",
+            "https://mysignal-togv.onrender.com/generate-signal",
             {
                 method: "POST",
 
