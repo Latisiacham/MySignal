@@ -498,3 +498,86 @@ footer {
     .ai-item p {
         line-height: 1.7;
     }
+
+    @media (max-width: 700px) {
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+        flex-direction: column;
+    }
+
+    .hero-text,
+    .hero-card {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-card {
+        margin-top: 20px;
+    }
+
+    .create {
+        padding: 50px 20px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .question {
+        padding: 25px 0;
+    }
+
+    .options {
+        grid-template-columns: 1fr;
+    }
+
+    .options button {
+        width: 100%;
+    }
+
+    .words {
+        padding: 25px 0;
+    }
+
+    textarea {
+        min-height: 180px;
+    }
+
+    .support-card,
+    .signal {
+        margin: 40px 20px;
+        padding: 30px 20px;
+    }
+
+    .support-card h2,
+    .signal h2 {
+        font-size: 28px;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+}
