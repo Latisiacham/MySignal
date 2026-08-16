@@ -36,6 +36,8 @@ Users can create a personal support signal that explains:
 - [x] Interactive response questions
 - [x] Show signal summary
 - [x] Allow users to describe their needs in their own words
+- [x] Personal text input
+- [x] Personal signal generator interface
 - [ ] AI signal generator
 - [ ] Support card
 - [ ] Sharing
@@ -64,6 +66,15 @@ own experience in a text box.
 
 MySignal validates the input and allows the user's own words to become
 part of their support journey.
+
+## Signal Generator
+
+Users can either answer guided questions or describe their experience
+in their own words. MySignal then presents the information as a simple
+support guide.
+
+The next stage will introduce AI to transform the user's own words
+into a clearer and more personalized support signal.
 
 ### Design
 
