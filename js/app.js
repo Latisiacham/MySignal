@@ -136,3 +136,34 @@ makeAiSignal.addEventListener("click", async function() {
     }
 
 });
+
+const copySignal = document.querySelector("#copy-signal");
+const copyMessage = document.querySelector("#copy-message");
+
+copySignal.addEventListener("click", async function() {
+
+    const signalText =
+        "MY SIGNAL\n\n" +
+        "When I'm having a difficult day:\n" +
+        dayAnswer.textContent.trim() + "\n\n" +
+        "What helps me:\n" +
+        helpAnswer.textContent.trim() + "\n\n" +
+        "What doesn't help:\n" +
+        badAnswer.textContent.trim();
+
+    try {
+
+        await navigator.clipboard.writeText(signalText);
+
+        copyMessage.textContent = "Your signal has been copied!";
+
+    } catch (error) {
+
+        console.error(error);
+
+        copyMessage.textContent =
+            "Unable to copy your signal.";
+
+    }
+
+});
